@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+body::before
+{ 
+content: '';
+position: fixed;
+top: 0;
+left: 0;  
+background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+height: 100%;
+width: 100%;
+background-size: cover;
+background-repeat: no-repeat;
+z-index: -1;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+#title{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-weight: 350;
+    letter-spacing: 0.1 em;
+}
+#description{
+    margin: 0;
+    padding: 0;
+    font-weight: 100;
+    font-size: large;
+    color: white;
+}
+#survey-form {
+    margin-top: 30px;
+    border-radius: 5px;
+    color: white;
+    padding: 40px 30px 60px 30px;
+    width: 700px;
+    background-color: rgba(2, 1, 17, 0.7);
+}
+#survey-form  div{
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#survey-form  div label{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 6px;
+}
+#survey-form  div input{
+    height: 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+#survey-form  div input:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+#survey-form  div  select{
+    height: 34px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+#survey-form  div input[type= 'checkbox']{
+    width: 20px;
+}
+#survey-form  div input[type= 'radio']{
+    width: 20px;
+}
+#survey-form  div  select:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+#submit{
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(45, 197, 45);
+    font-size: 20px;
+    cursor: pointer;
+}
+#survey-form div textarea{
+    font-size: 18px;
+}
+@media(max-width: 767px){
+    form{
+        width: 430px;
+    }
+    form div input[type= 'checkbox']
+    {
+        width: 20px;
+    }
+    form div input[type= 'radio']
+    {
+        width: 20px;
+    }
+    #submit{
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 3px;
+        background-color: rgb(45, 197, 45);
+        font-size: 20px;
+    }
+}
+
+
+
+
